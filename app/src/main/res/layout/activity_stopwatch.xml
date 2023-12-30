@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!-- res/layout/activity_main.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        tools:context=".StopwatchActivity">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/iVicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stopwatch_svgrepo_com" />
+
+    <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iVicon"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            android:textAppearance="@dimen/material_emphasis_high_type"
+            android:textSize="72sp" />
+
+    <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timerTextView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:padding="24dp"
+            android:text="@string/start"
+            android:textSize="24sp"
+            tools:ignore="VisualLintButtonSize" />
+
+    <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@id/startButton"
+            android:padding="24dp"
+            android:text="@string/stop"
+            android:textSize="24sp"
+            tools:ignore="VisualLintButtonSize" />
+
+
+    <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stopButton"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_toEndOf="@id/stopButton"
+            android:padding="24dp"
+            android:text="@string/reset"
+            android:textSize="24sp"
+            tools:ignore="VisualLintButtonSize" />
+
+
+</RelativeLayout>
